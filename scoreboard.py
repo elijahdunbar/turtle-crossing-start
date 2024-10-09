@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-SCOREBOARD_POS = (-215, 250)
+SCOREBOARD_POS = (-280, 265)
 FONT = ("Courier", 24, "normal")
 
 
@@ -16,7 +16,7 @@ class Scoreboard(Turtle):
 
     def print_level(self):
         self.clear()
-        self.write(f"Level: {self.level}", align="center", font=FONT)
+        self.write(f"Level: {self.level}", align="left", font=FONT)
 
     def next_level(self):
         self.level += 1
